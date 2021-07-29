@@ -11,6 +11,7 @@ COPY . /opt/stackedit
 ENV NODE_ENV production
 RUN npm run build
 
+VOLUME /opt/stackedit
 EXPOSE 8080
 
 CMD [ "node", "." ]
